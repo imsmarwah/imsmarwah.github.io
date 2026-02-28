@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sawan Singh Marwah | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Sawan Singh Marwah | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- ===== TERMINAL LOADER ===== -->
+<div id="loader">
+  <div class="terminal">
+    <p id="line1"></p>
+    <p id="line2"></p>
+    <p id="line3"></p>
+    <p id="line4"></p>
+    <p id="line5"></p>
+  </div>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div id="main-content">
+
 <nav class="navbar">
     <h2 class="logo">Sawan<span>.</span></h2>
-
     <div class="menu-toggle" id="menu-toggle">☰</div>
-
     <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -29,130 +37,148 @@
     </ul>
 </nav>
 
-
-<!-- ================= HERO ================= -->
+<!-- ===== HERO ===== -->
 <section class="hero">
-    <div class="hero-container">
+<div class="hero-container">
 
-        <div class="hero-left">
-            <h1>Hi, I'm <span>Sawan Singh Marwah</span></h1>
-            <p>Full Stack Developer (JavaScript) | MSc Computer Systems Student</p>
+<div class="hero-left">
+<h1 class="fade-in">
+Hi, I'm <span class="highlight">Sawan Singh Marwah</span>
+</h1>
 
-            <div class="buttons">
-                <a href="Sawan_Singh_Marwah_CV.pdf" download class="btn">Download CV</a>
+<h3 class="typing"></h3>
 
-                <a href="#projects" class="btn-outline">
-                    View Projects
-                </a>
+<div class="buttons">
+    <a href="Sawan_Singh_Marwah_CV.pdf" download class="btn">Download CV</a>
+    <a href="#projects" class="btn-outline">View Projects</a>
+</div>
 
-                <div class="social-icons">
-                    <a href="https://github.com/imsmarwah" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
+<div class="hero-social">
+    <a href="https://github.com/imsmarwah" target="_blank" class="social-btn">
+        <i class="fa-brands fa-github"></i>
+    </a>
 
-                    <a href="https://www.linkedin.com/in/sawan-singh-marwah" target="_blank">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
+    <a href="https://www.linkedin.com/in/sawan-singh-marwah" target="_blank" class="social-btn">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
 
-                    <a href="mailto:smarwah1998@gmail.com">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <a href="mailto:smarwah1998@gmail.com" class="social-btn">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+</div>
+</div>
+</div>
 
-        <div class="hero-right">
-            <img src="profile.jpg.png" alt="Sawan Profile">
-        </div>
+<div class="hero-right">
+<img src="profile.jpg.png" alt="Sawan Profile">
+</div>
 
-    </div>
+</div>
 </section>
 
-
-<!-- ================= ABOUT ================= -->
+<!-- ===== ABOUT ===== -->
 <section id="about" class="section hidden">
-    <h2>About Me</h2>
-    <p>
-        I am an MSc Computer Systems student at Riga Nordic University with a strong focus on Full Stack Web Development. 
-        I build responsive web applications using HTML, CSS, and JavaScript, and I am currently expanding my backend skills with Node.js and MongoDB. 
-        With 7+ years of business operations experience, I bring strong analytical thinking, problem-solving abilities, and leadership skills into the tech field. 
-        Currently seeking internship opportunities in Software Development.
-    </p>
+<h2>About Me</h2>
+<p>
+MSc Computer Systems student in Riga. Full Stack Developer building scalable web applications using JavaScript, Node.js & MongoDB. Passionate about AI-powered systems and modern backend architecture. Currently seeking Software Development internships in Europe.
+</p>
 </section>
 
-
-<!-- ================= SKILLS ================= -->
+<!-- ===== SKILLS ===== -->
 <section id="skills" class="section hidden">
-    <h2>Technical Skills</h2>
+    <h2>Tech Stack</h2>
 
-    <div class="skill-box">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">Node.js</div>
-        <div class="skill">Express.js</div>
-        <div class="skill">MongoDB</div>
-        <div class="skill">SQL</div>
-        <div class="skill">Git</div>
-        <div class="skill">GitHub</div>
-        <div class="skill">Java</div>
-    </div>
-</section>
+    <div class="skills-grid">
 
-
-<!-- ================= PROJECTS ================= -->
-<section id="projects" class="section hidden">
-    <h2>Projects</h2>
-
-    <div class="project-grid">
-
-        <div class="project-card">
-            <h3>Modern To-Do App</h3>
-            <p>
-                Responsive task management web application built using HTML, CSS, and JavaScript.
-                Implements local storage for persistent data handling.
-            </p>
-
-            <div class="project-links">
-                <a href="https://imsmarwah.github.io/todo-app/" target="_blank">Live Demo</a>
-                <a href="https://github.com/imsmarwah/todo-app" target="_blank">GitHub</a>
-            </div>
+        <div class="skill-card">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML</p>
         </div>
 
-        <div class="project-card">
-            <h3>Simon Memory Game</h3>
-            <p>
-                Interactive browser-based memory game inspired by the classic Simon Game.
-                Includes animations and sound logic.
-            </p>
-
-            <div class="project-links">
-                <a href="https://imsmarwah.github.io/simon-game/" target="_blank">Live Demo</a>
-                <a href="https://github.com/imsmarwah/simon-game" target="_blank">GitHub</a>
-            </div>
+        <div class="skill-card">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS</p>
         </div>
 
-    </div>
-</section>
+        <div class="skill-card">
+            <i class="fa-brands fa-js"></i>
+            <p>JavaScript</p>
+        </div>
 
+        <div class="skill-card">
+            <i class="fa-brands fa-node-js"></i>
+            <p>Node.js</p>
+        </div>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="section hidden">
-    <h2>Contact</h2>
+        <div class="skill-card">
+            <i class="fa-solid fa-server"></i>
+            <p>Express.js</p>
+        </div>
 
-    <p><i class="fa-solid fa-phone"></i> +371 26668183</p>
-    <p><i class="fa-solid fa-envelope"></i> smarwah1998@gmail.com</p>
-    <p><i class="fa-solid fa-location-dot"></i> Riga, Latvia</p>
+        <div class="skill-card">
+            <i class="fa-solid fa-database"></i>
+            <p>MongoDB</p>
+        </div>
 
-    <div class="social-icons contact-icons">
-        <a href="https://github.com/imsmarwah" target="_blank">
+        <div class="skill-card">
+            <i class="fa-solid fa-database"></i>
+            <p>SQL</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-git-alt"></i>
+            <p>Git</p>
+        </div>
+
+        <div class="skill-card">
             <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/sawan-singh-marwah" target="_blank">
-            <i class="fa-brands fa-linkedin-in"></i>
-        </a>
+            <p>GitHub</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fa-brands fa-react"></i>
+            <p>React</p>
+        </div>
+
     </div>
 </section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section hidden">
+<h2>Projects</h2>
+
+<div class="project-grid">
+
+<div class="project-card">
+<h3>Modern To-Do App</h3>
+<p>Task manager with local storage & clean UI.</p>
+<div class="project-links">
+<a href="https://imsmarwah.github.io/todo-app/" target="_blank">Live</a>
+<a href="https://github.com/imsmarwah/todo-app" target="_blank">Code</a>
+</div>
+</div>
+
+<div class="project-card">
+<h3>Simon Memory Game</h3>
+<p>Interactive game with animations & sound logic.</p>
+<div class="project-links">
+<a href="https://imsmarwah.github.io/simon-game/" target="_blank">Live</a>
+<a href="https://github.com/imsmarwah/simon-game" target="_blank">Code</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section hidden">
+<h2>Contact</h2>
+<p><i class="fa-solid fa-phone"></i> +371 26668183</p>
+<p><i class="fa-solid fa-envelope"></i> smarwah1998@gmail.com</p>
+<p><i class="fa-solid fa-location-dot"></i> Riga, Latvia</p>
+</section>
+
+</div>
 
 <script src="script.js"></script>
 </body>
